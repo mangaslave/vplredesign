@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mobile UI</title>
+</head>
+<body class="bg-white">
+    <div class="max-w-sm mx-auto p-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex space-x-1 size-24">
+                <img src="assets/images/logo.svg" alt="VPL Logo" />
+            </div>
+            <div class="flex space-x-3">
+                <button><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405M19 13V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h10m-4-4h4m4-2l-1.5-1.5M19 13l-2 2m2-2l-2-2"></path></svg></button>
+                <button><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+            </div>
+        </div>
+        
+        <!-- Carousel Placeholder -->
+        <div class="bg-yellow-400 h-28 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold">Carousel</span>
+        </div>
+        
+        <!-- Dots -->
+        <div class="flex justify-center space-x-1 py-2">
+            <span class="w-2 h-2 bg-yellow-400 rounded-full"></span>
+            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+        </div>
+        
+        <!-- Categories -->
+        <div class="flex space-x-2 py-2">
+            <button class="bg-red-100 text-red-500 px-3 py-1 rounded-full border border-red-500">Popular</button>
+            <button class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full">Kids</button>
+        </div>
+        
+        <!-- Cards -->
+        <div class="grid grid-cols-3 gap-2">
+            <div class="bg-gray-300 h-24 rounded-lg"></div>
+            <div class="bg-gray-300 h-24 rounded-lg"></div>
+            <div class="bg-gray-300 h-24 rounded-lg"></div>
+        </div>
+        
+        <!-- Book Titles -->
+        <div class="grid grid-cols-3 text-center text-sm pt-2">
+            <div>
+                <p class="font-semibold">The Art of Life</p>
+                <p class="text-gray-500">Mohammed</p>
+            </div>
+            <div>
+                <p class="font-semibold">The Art of Life</p>
+                <p class="text-gray-500">Mohammed</p>
+            </div>
+            <div>
+                <p class="font-semibold">The Art of Life</p>
+                <p class="text-gray-500">Mohammed</p>
+            </div>
+        </div>
+        
+        <!-- Floating Button -->
+        <div class="fixed bottom-4 right-14">
+            <button class="rounded-full shadow-lg overflow-hidden w-12 h-12 bg-blue-100">
+                <img class="w-full h-full object-cover" src="/assets/images/language.svg" alt="language button">
+              </button>
+        </div>
+    </div>
+</body>
+</html>
