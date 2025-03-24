@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Vancouver Public Library</title>
+</head>
+<body class="bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <div class="w-48 h-20 flex-shrink-0">
+                <img src="assets/images/logo.svg" alt="VPL Logo" class="w-full h-full" />
+              </div>
+              <div class="ml-2">
+                <p class="font-bold text-gray-900 uppercase text-sm leading-tight">Vancouver</p>
+                <p class="font-bold text-gray-900 uppercase text-sm leading-tight">Public</p>
+                <p class="font-bold text-gray-900 uppercase text-sm leading-tight">Library</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex items-center space-x-4">
+            <a href="#" class="flex items-center text-gray-600 hover:text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Help
+            </a>
+            <a href="/login" class="bg-blue-500 text-white px-4 py-2 rounded text-sm font-medium">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="px-4 py-6 flex flex-col items-center">
+        <div class="flex items-center mb-8 justify-center">
+          <h1 class="text-4xl text-blue-500 mr-2 font-light">Log In</h1>
+        </div>
+        
+        <div class="flex mb-6 bg-orange-100 border-l-4 border-orange-500 p-3 w-80 justify-center">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 text-orange-500 mr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="text-sm">
+              If you need to reset your PIN, please wait several minutes between creating
+              <button class="text-gray-400 text-lg ml-2">&times;</button>
+            </div>
+          </div>
+        </div>
+        
+        <form class="w-80">
+            <div class="relative mb-4">
+                <div class="rounded-lg border-2 border-gray-300 px-4 py-3 w-full flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <input 
+                    type="text" 
+                    placeholder="Library Card ID" 
+                    class="w-full focus:outline-none bg-transparent"
+                  />
+                </div>
+              </div>
+              
+              <div class="relative mb-4">
+                <div class="rounded-lg border-2 border-gray-300 px-4 py-3 w-full flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  </svg>
+                  <input 
+                    type="password" 
+                    placeholder="PIN" 
+                    class="w-full focus:outline-none bg-transparent"
+                  />
+                </div>
+              </div>
+          
+          <div class="mb-4">
+            <a href="#" class="text-gray-600 hover:text-blue-600 underline">Forgot your PIN?</a>
+          </div>
+          
+          <div class="mb-4">
+            <label class="flex items-center">
+              <input type="checkbox" class="mr-2" />
+              <span>Remember me on this device</span>
+            </label>
+          </div>
+          
+          <button type="submit" class="bg-blue-500 hover:bg-amber-200 text-white hover:text-black py-2 px-4 rounded w-80">Log In</button>
+        </form>
+        
+        <div class="mt-8">
+          <p class="mb-2">Trouble logging in? <a href="#" class="text-blue-400 hover:text-blue-700">Click here for help.</a></p>
+        </div>
+      </div>
+        
+    <div class="text-center text-gray-500 text-sm mt-8 pb-8">
+      <div>Powered by BiblioCommons.</div>
+      <div>BiblioCore: app39 Version 9.27.0</div>
+      <div>Last updated 2025/02/06 12:11</div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

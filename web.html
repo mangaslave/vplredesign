@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Vancouver Public Library</title>
+</head>
+<body class="bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header/Navigation -->
+    <header class="border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo and name section properly aligned -->
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <div class="w-48 h-20 flex-shrink-0">
+                <img src="assets/images/logo.svg" alt="VPL Logo" class="w-full h-full" />
+              </div>
+              <div class="ml-2">
+                <p class="font-bold text-gray-900 uppercase text-sm leading-tight">Vancouver</p>
+                <p class="font-bold text-gray-900 uppercase text-sm leading-tight">Public</p>
+                <p class="font-bold text-gray-900 uppercase text-sm leading-tight">Library</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Search and Login grouped together -->
+          <div class="flex items-center space-x-4">
+            <div class="relative">
+              <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-64">
+              <svg class="w-5 h-5 text-gray-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <a href="/login" class="bg-blue-500 text-white px-4 py-2 rounded text-sm font-medium">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <nav class="border-t border-b border-gray-200 py-2 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Main navigation items - centered and in one line -->
+                <div class="flex-1 flex justify-center space-x-4 md:space-x-6 text-xs md:text-sm">
+                    <a href="#" class="text-gray-700 hover:text-red-500 transition-colors duration-200 font-medium whitespace-nowrap">Hours & Locations</a>
+                    
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-700 hover:text-red-500 transition-colors duration-200 font-medium whitespace-nowrap">
+                            Borrowing
+                            <svg class="ml-1 w-3 h-3 md:w-4 md:h-4 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-700 hover:text-red-500 transition-colors duration-200 font-medium whitespace-nowrap">
+                            Digital Library
+                            <svg class="ml-1 w-3 h-3 md:w-4 md:h-4 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-700 hover:text-red-500 transition-colors duration-200 font-medium whitespace-nowrap">
+                            Booking & Facilities
+                            <svg class="ml-1 w-3 h-3 md:w-4 md:h-4 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-700 hover:text-red-500 transition-colors duration-200 font-medium whitespace-nowrap">
+                            Programs & Events
+                            <svg class="ml-1 w-3 h-3 md:w-4 md:h-4 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-700 hover:text-red-500 transition-colors duration-200 font-medium whitespace-nowrap">
+                            Ask Us
+                            <svg class="ml-1 w-3 h-3 md:w-4 md:h-4 transition-transform transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <a href="#" class="text-gray-700 hover:text-red-500 transition-colors duration-200 font-medium whitespace-nowrap">Rights & Reconciliation</a>
+                    <a href="#" class="text-gray-700 hover:text-red-500 transition-colors duration-200 font-medium whitespace-nowrap">Accesibility</a>
+
+                </div>
+            
+            </div>
+        </div>
+    </nav>
+  
+    
+    <main class="mt-8">
+        <!-- Banner as a standalone section -->
+        <section class="mb-10">
+            <div class="flex flex-col md:flex-row gap-6">
+              <!-- Carousel on the left -->
+              <div class="relative overflow-hidden rounded-lg md:w-1/2">
+                <div id="carousel-slides" class="flex transition-all duration-700 ease-in-out">
+                  <div class="min-w-full h-80 bg-cover bg-center rounded-lg" style="background-image: url('assets/images/slide1.jpg');"></div>
+                  <div class="min-w-full h-80 bg-cover bg-center rounded-lg" style="background-image: url('assets/images/slide2.jpg');"></div>
+                  <div class="min-w-full h-80 bg-cover bg-center rounded-lg" style="background-image: url('assets/images/slide3.jpg');"></div>
+                </div>
+                <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+                  <span class="dot w-3 h-3 bg-yellow-400 rounded-full cursor-pointer transition-colors duration-300" onclick="currentSlide(0)"></span>
+                  <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer transition-colors duration-300" onclick="currentSlide(1)"></span>
+                  <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer transition-colors duration-300" onclick="currentSlide(2)"></span>
+                </div>
+              </div>
+              
+              <!-- Text content on the right -->
+              <div class="md:w-1/2 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-4">Spring Break at the Library</h2>
+                <p class="text-gray-700 mb-4">
+                  March 15 to 30: When school is out, we've got you covered! We have fun programs for kids, teens and families all throughout Spring Break.
+                </p>
+                <p class="text-gray-700 mb-6">
+                  From film screenings to animation and drawing workshops to a K-Pop Social, there's plenty to check out at the library!
+                </p>
+                <a href="#" class="bg-black text-white px-6 py-2 rounded inline-block w-max hover:bg-gray-800 transition-colors">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </section>
+
+        <!-- Categories -->
+    <div class="flex space-x-2 py-2">
+        <button class="bg-red-100 text-red-500 px-3 py-1 rounded-full border border-red-500">New Arrivals</button>
+        <button class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full">Popular</button>
+        <button class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full">Stuff Picks</button>
+        <button class="bg-gray-200 text-gray-600 px-3 py-1 rounded-full">Bestsellers</button>
+    </div>
+      
+      <!-- Cards -->
+      <div class="grid grid-cols-9 gap-5 py-4">
+          <img src="assets/images/bookcover1.jpeg" alt="Entangled Life" class="rounded-lg w-full">
+          <img src="assets/images/bookcover2.jpeg" alt="Earthkeeping" class="rounded-lg w-full">
+          <img src="assets/images/bookcover3.jpeg" alt="Jane Eyre" class="rounded-lg w-full">
+          <img src="assets/images/bookcover4.jpeg" alt="Entangled Life" class="rounded-lg w-full">
+          <img src="assets/images/bookcover6.jpeg" alt="Earthkeeping" class="rounded-lg w-full">
+          <img src="assets/images/bookcover5.jpeg" alt="Jane Eyre" class="rounded-lg w-full">
+          <img src="assets/images/bookcover7.jpeg" alt="Entangled Life" class="rounded-lg w-full">
+          <img src="assets/images/bookcover8.jpeg" alt="Earthkeeping" class="rounded-lg w-full">
+          <img src="assets/images/bookcover9.jpeg" alt="Jane Eyre" class="rounded-lg w-full">
+      </div>
+
+        <div class="grid grid-cols-9 text-center text-xs mb-8 gap-5">
+            <div>
+              <p class="font-semibold">
+                  Entangled Life</p>
+              <p class="text-gray-500">Sheldrake Merlin</p>
+            </div>
+            <div>
+              <p class="font-semibold">Earthkeeping
+              </p>
+              <p class="text-gray-500">Saunders Gary L.</p>
+            </div>
+            <div>
+              <p class="font-semibold">
+                  Jane Eyre</p>
+              <p class="text-gray-500">Charlotte Brontë</p>
+            </div>
+
+            <div>
+                <p class="font-semibold">
+                    Save Our Souls</p>
+                <p class="text-gray-500">Matthew Pearl</p>
+              </div>
+              <div>
+                <p class="font-semibold">
+                    When We Sold God's Eye
+                </p>
+                <p class="text-gray-500">Alex Cuadros</p>
+              </div>
+              <div>
+                <p class="font-semibold">
+                    
+The White Ladder</p>
+                <p class="text-gray-500">Danile Light</p>
+              </div>
+
+              <div>
+                <p class="font-semibold">
+                    
+A Brief History of the World in 47 Borders</p>
+                <p class="text-gray-500">John Elledge</p>
+              </div>
+              <div>
+                <p class="font-semibold">
+                    Migratory Birds
+                </p>
+                <p class="text-gray-500">Mariana Oliver</p>
+              </div>
+              <div>
+                <p class="font-semibold">
+                    The Last Dive</p>
+                <p class="text-gray-500">Bernie Chowdhury</p>
+              </div>
+          </div>
+        
+        <!-- Age group sections in a row -->
+        <section class="mb-10">
+          <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+            <div class="bg-blue-500 h-32 rounded-lg flex flex-col items-center justify-center text-white">
+              <div class="text-2xl mb-1">
+                <svg class="h-8 w-8 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  <line x1="9" y1="10" x2="9.01" y2="10" />  <line x1="15" y1="10" x2="15.01" y2="10" />  <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />  <path d="M12 3a2 2 0 0 0 0 4" /></svg>
+              </div>
+              <div class="text-sm font-semibold">KIDS</div>
+            </div>
+            
+            <div class="bg-red-500 h-32 rounded-lg flex flex-col items-center justify-center text-white">
+              <div class="text-2xl mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+                  <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                  <polyline points="17 2 12 7 7 2"></polyline>
+                </svg>
+              </div>
+              <div class="text-sm font-semibold">TEENS</div>
+            </div>
+            
+            <div class="bg-amber-400 h-32 rounded-lg flex flex-col items-center justify-center text-black">
+              <div class="text-lg mb-1 font-medium">中文</div>
+              <div class="text-sm font-semibold">CHINESE LANGUAGE</div>
+            </div>
+                <div class="bg-blue-500 h-32 rounded-lg flex flex-col items-center justify-center text-white">
+                  <div class="text-2xl mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+                      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                      <line x1="12" y1="18" x2="12" y2="18"></line>
+                    </svg>
+                  </div>
+                  <div class="text-sm font-semibold">EBOOKS</div>
+                </div>
+                
+                <div class="bg-red-500 h-32 rounded-lg flex flex-col items-center justify-center text-white">
+                  <div class="text-2xl mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+                      <path d="M9 18V5l12-2v13"></path>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="text-sm font-semibold">DIGITAL AUDIOBOOKS</div>
+                </div>
+                
+                <div class="bg-amber-400 h-32 rounded-lg flex flex-col items-center justify-center text-black">
+                  <div class="text-2xl mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto">
+                      <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                      <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
+                  </div>
+                  <div class="text-sm font-semibold">STREAMING VIDEO</div>
+                </div>
+          </div>  
+        </section>
+        
+        
+    
+        <h2 class=" text-gray-600 py-1 font-bold text-size-sm">March 10th</h2>
+    
+        <!-- Events Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+          <!-- Event 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h3 class="text-base font-bold text-blue-600 mb-3">Babytime</h3>
+            <div class="space-y-1">
+              <p class="text-gray-800">Renfrew Branch</p>
+              <p class="text-gray-800">1:30pm</p>
+            </div>
+          </div>
+    
+          <!-- Event 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h3 class="text-base font-bold text-blue-600 mb-3">Baby Stay and Play</h3>
+            <div class="space-y-1">
+              <p class="text-gray-800">Central Library</p>
+              <p class="text-gray-800">1:45pm</p>
+            </div>
+          </div>
+    
+          <!-- Event 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h3 class="text-base font-bold text-blue-600 mb-3">Tech Help</h3>
+            <div class="space-y-1">
+              <p class="text-gray-800">South Hill Branch</p>
+              <p class="text-gray-800">2:00pm</p>
+            </div>
+          </div>
+    
+          <!-- Event 4 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h3 class="text-base font-bold text-blue-600 mb-3">PAWS 4 Stories</h3>
+            <div class="space-y-1">
+              <p class="text-gray-800">Mount Pleasant Branch</p>
+              <p class="text-gray-800">3:30pm</p>
+            </div>
+          </div>
+    
+          <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 mx-auto flex justify-center items-center" style="max-width: 200px;">
+            <div class="text-center">
+              <p class="text-gray-800 font-medium">See more</p>
+            </div>
+          </div>
+        </div>
+          
+        <!-- <div class="grid grid-cols-1 gap-2 py-6">
+            <div class="bg-white h-24 min-w-full rounded-lg border border-gray-300 "></div>
+            <div class="bg-white h-24 min-w-full rounded-lg border border-gray-300"></div>
+            <div class="bg-white h-24 min-w-full rounded-lg border border-gray-300"></div>
+            <div class="bg-white h-24 min-w-full rounded-lg border border-gray-300"></div>
+          </div> -->
+        
+        <!-- Floating Button -->
+        <div class="fixed bottom-4 right-14">
+          <button class="rounded-full shadow-lg overflow-hidden w-12 h-12 bg-blue-100">
+            <img class="w-full h-full object-cover" src="/assets/images/language.svg" alt="language button">
+          </button>
+        </div>
+      </div>
+      
+      <script>
+        let slideIndex = 0;
+        const slides = document.getElementById('carousel-slides');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.children.length;
+        let autoSlideInterval;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        slides.addEventListener('touchstart', e => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        slides.addEventListener('touchend', e => {
+          touchEndX = e.changedTouches[0].screenX;
+          handleSwipe();
+        }, { passive: true });
+        
+        function handleSwipe() {
+          const swipeThreshold = 50;
+          if (touchStartX - touchEndX > swipeThreshold) {
+            showSlide(slideIndex + 1);
+          } else if (touchEndX - touchStartX > swipeThreshold) {
+            showSlide(slideIndex - 1);
+          }
+        }
+        
+        function showSlide(index) {
+          if (index >= totalSlides) slideIndex = 0;
+          else if (index < 0) slideIndex = totalSlides - 1;
+          else slideIndex = index;
+          
+          slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+          
+          dots.forEach((dot, i) => {
+            if (i === slideIndex) {
+              dot.classList.remove('bg-gray-300');
+              dot.classList.add('bg-yellow-400');
+            } else {
+              dot.classList.remove('bg-yellow-400');
+              dot.classList.add('bg-gray-300');
+            }
+          });
+          
+          resetAutoSlide();
+        }
+        
+        function currentSlide(index) {
+          showSlide(index);
+        }
+        
+        function nextSlide() {
+          showSlide(slideIndex + 1);
+        }
+        
+        function resetAutoSlide() {
+          clearInterval(autoSlideInterval);
+          autoSlideInterval = setInterval(nextSlide, 4000);
+        }
+        
+        resetAutoSlide();
+        
+        const hamburgerButton = document.getElementById("hamburger-btn");
+        const menu = document.getElementById("menu");
+        hamburgerButton.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+        
+        document.addEventListener('click', (e) => {
+          if (!hamburgerButton.contains(e.target) && !menu.contains(e.target) && !menu.classList.contains('hidden')) {
+            menu.classList.add('hidden');
+          }
+        });
+      </script>
+    </body>
+    </html>

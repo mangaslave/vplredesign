@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Login</title>
+</head>
+<body class="bg-white">
+  <div class="max-w-sm mx-auto p-0">
+    <div class="flex justify-between items-center py-4">
+      <div class="flex space-x-1 size-24">
+        <img src="assets/images/logo.svg" alt="VPL Logo" />
+      </div>
+      <div class="flex space-x-3">
+        <div class="flex justify-between items-center p-4">
+          <button>
+            <svg class="w-6 h-6 text-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </button>
+          <nav>
+            <div class="max-w-screen-2xl px-0 py-3 mx-auto ml-4">
+              <div class="flex items-center justify-between">
+                <ul class="hidden md:flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                  <li><a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a></li>
+                  <li><a href="#" class="text-gray-900 dark:text-white hover:underline">Company</a></li>
+                  <li><a href="#" class="text-gray-900 dark:text-white hover:underline">Team</a></li>
+                  <li><a href="#" class="text-gray-900 dark:text-white hover:underline">Features</a></li>
+                </ul>
+                <button id="hamburger-btn" class="md:hidden text-gray-900 dark:text-gray">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+                </button>
+              </div>
+              <div id="menu" class="hidden md:hidden absolute bg-white shadow-lg rounded-lg p-4 z-10 right-4 mt-2 w-64">
+                <ul class="flex flex-col font-medium space-y-3 text-sm">
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Hours & Locations
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        Borrowing
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Digital Library
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        Booking & Facilities
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        Program & Events
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                        Rights & Reconciliation
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Accessibility
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        Services
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="flex items-center text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Ask Us
+                      </a>
+                    </li>
+                    
+                    <li class="pt-2 mt-2 border-t border-gray-200">
+                      <a href="/Login.html" class="flex items-center text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-md p-2 transition-colors">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+                        </svg>
+                        Login
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+    <div class="px-4 py-6">
+        <div class="flex items-center mb-8 justify-center">
+          <h1 class="text-4xl text-blue-500 mr-2 font-light">Log In</h1>
+        </div>
+        
+        <!-- Alert message -->
+        <div class="flex mb-6 bg-orange-100 border-l-4 border-orange-500 p-3">
+          <div class="flex-shrink-0 text-orange-500 mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="text-sm">
+            If you need to reset your PIN, please wait several minutes between creating
+            <button class="text-gray-400 text-lg ml-2">&times;</button>
+          </div>
+        </div>
+        
+        <!-- Login form -->
+        <form>
+            <div class="relative mb-4">
+                <div class="rounded-lg border-2 border-gray-300 px-4 py-3 w-full flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <input 
+                    type="text" 
+                    placeholder="Library Card ID" 
+                    class="w-full focus:outline-none bg-transparent"
+                  />
+                </div>
+              </div>
+              
+              <!-- PIN Input -->
+              <div class="relative mb-4">
+                <div class="rounded-lg border-2 border-gray-300 px-4 py-3 w-full flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  </svg>
+                  <input 
+                    type="password" 
+                    placeholder="PIN" 
+                    class="w-full focus:outline-none bg-transparent"
+                  />
+                </div>
+              </div>
+          
+          <div class="mb-4">
+            <a href="#" class="text-gray-600 hover:text-blue-600 underline">Forgot your PIN?</a>
+          </div>
+          
+          <div class="mb-4">
+            <label class="flex items-center">
+              <input type="checkbox" class="mr-2" />
+              <span>Remember me on this device</span>
+            </label>
+          </div>
+          
+          <button type="submit" class="bg-blue-500 hover:bg-amber-200 text-white hover:text-black py-2 px-4 rounded min-w-full" onclick="location.href='/Dashboard.html'">Log In</button>
+        </form>
+        
+        <!-- Help section -->
+        <div class="mt-8">
+          <p class=" mb-2">Trouble logging in? <a href="http://localhost:5173/Dashboard.html" class="text-blue-400 hover:text-blue-700">Click here for help.</a></p>
+        </div>
+      </div>
+        
+       
+  </div>
+
+  <div class="bg-white text-gray-500 flex flex-col items-center py-8 px-4">
+    <!-- Navigation Menu -->
+    <nav class="w-full max-w-xs mb-6 text-center">
+      <!-- Up arrow icon -->
+      <div class="flex justify-center mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      
+      <!-- Menu Links -->
+      <ul class="space-y-3">
+        <li><a href="#" class="text-blue-400 hover:text-blue-600">About the Library</a></li>
+        <li><a href="#" class="text-blue-400 hover:text-blue-600">Kids</a></li>
+        <li><a href="#" class="text-blue-400 hover:text-blue-600">Teens</a></li>
+        <li><a href="#" class="text-blue-400 hover:text-blue-600">Old Catalogue</a></li>
+      </ul>
+
+      <div class="border-t border-gray-300 mt-4">
+        <ul class="space-y-3 mt-4">
+            <li><a href="#" class="text-blue-400 hover:text-blue-600">Privacy Statement</a></li>
+            <li><a href="#" class="text-blue-400 hover:text-blue-600">Terms of Use</a></li>
+            <li><a href="#" class="text-blue-400 hover:text-blue-600">Accessibility Statement</a></li>
+          </ul>
+      </div>
+    
+    </nav>
+    
+    <!-- Social Media Icons -->
+    <div class="flex justify-center space-x-6 mb-6">
+      <a href="#" class="text-gray-400 hover:text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+        </svg>
+      </a>
+      <a href="#" class="text-gray-400 hover:text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+        </svg>
+      </a>
+      <a href="#" class="text-gray-400 hover:text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+        </svg>
+      </a>
+    </div>
+    
+    <!-- Copyright and Links -->
+    <div class="text-center mt-3">
+        <div>Powered by BiblioCommons.</div>
+        <div>BiblioCore: app39 Version 9.27.0</div>
+        <div>Last updated 2025/02/06 12:11</div>
+    </div>
+  </div>
+</body>
+</html>
